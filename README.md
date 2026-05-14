@@ -1,4 +1,4 @@
-# 🎲 龙虎德州 | Telegram Bot + 区块链押注 | 完整源码|德州扑克游戏平台 | 德州扑克游戏平台|Poker Game Platform
+# 🎲 龙虎德州 | Telegram Bot + 区块链押注 | 完整源码|德州扑克游戏平台 |德州源碼|德州撲克|德州俱樂部| 德州扑克游戏平台|Poker Game Platform
 
 > **支持在Telegram群内直接押注 | 区块链Hash验证 | 时时开奖 | 线上成熟产品**
 🔥 Multiplayer Poker System | 多人扑克系统  
