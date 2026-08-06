@@ -1,6 +1,6 @@
 # 🎲 龙虎德州 | 德州源码   | 完整源码|德州扑克游戏平台 |德州源碼|德州撲克|德州俱樂部| 德州扑克游戏平台|Poker Game Platform| Telegram Bot + 区块链押注
 
-> **支持在Telegram群内直接押注 | 区块链Hash验证 | 时时开奖 | 线上成熟产品**
+> **支持在Telegram群内直接押注 | 区块链Hash验证 |线上成熟产品**
 🔥 Multiplayer Poker System | 多人扑克系统  
 👉 Texas Hold’em + Tournament + Club + Game Server  
 [![Contact](https://img.shields.io/badge/联系-TG%3A%40xuzongbin001-blue)](https://t.me/xuzongbin001)
