@@ -1,4 +1,6 @@
-# 🎲 龙虎德州 | 德州源码   | 完整源码|德州扑克游戏平台 |德州源碼|德州撲克|德州俱樂部| 德州扑克游戏平台|Poker Game Platform| Telegram Bot + 区块链押注
+[简体中文](README.md) | [繁體中文](README.zh-TW.md) | [English](README.en.md)
+
+# Telegram 多人扑克交互平台项目|龙虎德州 | 德州源码 |德州撲克
 
 > **支持在Telegram群内直接押注 | 区块链Hash验证 |线上成熟产品**
 🔥 Multiplayer Poker System | 多人扑克系统  
@@ -7,11 +9,15 @@
 [![Platform](https://img.shields.io/badge/平台-Telegram%20%7C%20Web-green)]()
 [![Language](https://img.shields.io/badge/后端-PHP-red)]()
 
+
 ---
+
 
 ## ✨ 核心特色 | Unique Features
 
+
 本项目是**国内少数**支持在Telegram内直接玩德州押注的源码：
+
 
 | 特色模块 | 功能说明 |
 | :--- | :--- |
@@ -21,6 +27,7 @@
 | 📱 **H5网页版** | 支持手机网页直接访问 |
 | 💰 **成熟产品** | 线上运营中，源码稳定 |
 
+
 ## 🎯 功能清单 | Features
 ✅ TG Bot押注 ✅ 时时开奖 ✅ 区块链Hash验证
 ✅ 余额查询 ✅ 提现系统 ✅ 投注记录
@@ -28,6 +35,7 @@
 
 
 ## 🚀 技术架构 | Tech Stack
+
 
 | 层级 | 技术 |
 | :--- | :--- |
@@ -37,22 +45,29 @@
 | **区块链** | Hash验证机制 |
 ## 🧠 Project Overview
 
+
 This is a full-featured poker game platform system.  
 一个完整的多人扑克游戏平台系统。
 
+
 Supports multiple poker modes:
+
 
 - Texas Hold’em  
 - Tournament Mode  
 - Club Games  
 - Multiplayer Cash Table  
 
+
 👉 Commercial-ready game platform  
 👉 可用于商业运营的棋牌游戏平台  
 
+
 ---
 
+
 ## ⚙️ Features
+
 
 - Real-time multiplayer system  
 - Game server architecture  
@@ -60,7 +75,9 @@ Supports multiple poker modes:
 - Tournament system  
 - Club system support  
 
+
 ---
+
 
 ## 🚀 Quick Start
 
@@ -71,12 +88,15 @@ npm install
 npm run start 
 ## 🏆 Use Cases
 
+
 - Poker game apps  
 - Casino-style platforms  
 - Social gaming systems  
 - Multiplayer card platforms 
 
+
 ## 📸 界面预览
+
 
 | TG Bot界面 | 押注界面 | 开奖结果 |
 | :---: | :---: | :---: |
@@ -89,25 +109,27 @@ npm run start
 <img width="1088" height="1187" alt="QQ_1768803800440" src="https://github.com/user-attachments/assets/0d190ed4-8b01-4cc0-9a4b-4f994a271444" />
 <img width="949" height="660" alt="houtai4" src="https://github.com/user-attachments/assets/a69a44d0-b9e2-4441-8275-52d45f6de2fb" />
 
+
 🎥 **演示视频**：[联系我获取在线演示](https://t.me/xuzongbin001)
 
+
 ## 💰 获取源码 | Contact
+
 
 ✅ 完整PHP后端源码  
 ✅ Telegram Bot代码  
 ✅ 数据库脚本  
 ✅ 部署文档  
 
+
 📱 **Telegram：@xuzongbin001**  
 📧 **Email：masterai918@gmail.com**
 
-👉 **联系我获取演示站 + 详细报价**
+
+
+
 
 ---
 
+
 ⭐ Star 这个仓库，支持优质TG德州源码持续分享！
-
-
-
-
-
