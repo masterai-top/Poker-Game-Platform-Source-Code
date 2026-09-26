@@ -1,135 +1,70 @@
 [简体中文](README.md) | [繁體中文](README.zh-TW.md) | [English](README.en.md)
 
-# Telegram 多人扑克交互平台项目|龙虎德州 | 德州源码 |德州撲克
+# Telegram 德州与 H5 Web 扑克游戏平台源码
 
-> **支持在Telegram群内直接押注 | 区块链Hash验证 |线上成熟产品**
-🔥 Multiplayer Poker System | 多人扑克系统  
-👉 Texas Hold’em + Tournament + Club + Game Server  
-[![Contact](https://img.shields.io/badge/联系-TG%3A%40xuzongbin001-blue)](https://t.me/xuzongbin001)
-[![Platform](https://img.shields.io/badge/平台-Telegram%20%7C%20Web-green)]()
-[![Language](https://img.shields.io/badge/后端-PHP-red)]()
+这是一个面向 **Telegram 群组与 H5 Web** 场景的多人扑克交互平台项目。现有产品资料展示 TG Bot 群内交互、龙虎德州快节奏玩法、Hash 结果验证、余额和投注记录、自动派彩、多群组支持与运营后台；技术说明涉及 PHP、Telegram Bot API、MySQL 和 Redis。
 
+> 重要：当前公开仓库只包含少量代码文件与三语说明，并不是 README 所描述完整商业系统的全部交付物。完整 PHP 后端、Bot、数据库脚本、后台和部署资料是否提供，应以实际授权与交付清单为准。本 README 不再提供无法由当前目录验证的启动命令。
 
----
+## 真实产品截图
 
+| 运营后台 | 后台数据页面 |
+|---|---|
+| ![Telegram 德州扑克平台运营后台](docs/assets/screenshots/admin-dashboard.png) | ![TG 德州游戏平台数据后台](docs/assets/screenshots/admin-dashboard-2.png) |
 
-## ✨ 核心特色 | Unique Features
+| Telegram 群内交互 | 投注界面 | 开奖结果 |
+|---|---|---|
+| ![Telegram 德州群内游戏界面](docs/assets/screenshots/telegram-game-1.png) | ![TG 龙虎德州投注界面](docs/assets/screenshots/telegram-bet-1.png) | ![龙虎德州开奖结果与Hash验证](docs/assets/screenshots/telegram-result-1.png) |
 
+## 产品功能
 
-本项目是**国内少数**支持在Telegram内直接玩德州押注的源码：
+- **Telegram Bot 集成**：产品资料展示在 Telegram 群内完成指令交互、投注、查询和结果通知，减少跳转步骤。
+- **H5 Web 入口**：适配手机浏览器访问，为 Telegram 内置浏览器或普通 Web 场景提供页面入口。
+- **龙虎德州玩法**：README 明确说明快节奏投注与持续开奖；具体牌型、赔率和结算规则应以完整产品配置为准。
+- **Hash 结果验证**：产品资料描述以 Hash 机制辅助核对开奖结果；上线前仍需独立审计随机源、种子披露与验证流程。
+- **账户与记录**：包括余额查询、投注记录、结果通知、自动派彩和提现相关产品流程。
+- **多群组与后台**：面向多个 Telegram 群的管理场景，截图展示运营后台与数据视图。
+- **多人扑克扩展**：线上说明还列出 Texas Hold'em、赛事、俱乐部和多人桌方向，但当前公开代码不足以验证完整实现。
 
+## 玩家使用流程
 
-| 特色模块 | 功能说明 |
-| :--- | :--- |
-| 🤖 **TG Bot集成** | 在Telegram群内直接押注、开牌、提现 |
-| ⛓️ **区块链验证** | 支持Hash验证，保证开奖公平 |
-| 🎲 **龙虎德州玩法** | 快节奏押注，时时开奖 |
-| 📱 **H5网页版** | 支持手机网页直接访问 |
-| 💰 **成熟产品** | 线上运营中，源码稳定 |
+1. 玩家在 Telegram 群中打开 Bot 或 H5 页面。
+2. 查看玩法、余额及当期状态，选择龙虎德州等入口。
+3. 通过 Bot 指令或 H5 界面提交操作。
+4. 系统生成结果并在群组或页面中通知，同时写入记录。
+5. 玩家可查询投注历史与 Hash 验证信息；具体资金流程需按当地法律与完整系统配置执行。
 
+## 技术架构与当前代码
 
-## 🎯 功能清单 | Features
-✅ TG Bot押注 ✅ 时时开奖 ✅ 区块链Hash验证
-✅ 余额查询 ✅ 提现系统 ✅ 投注记录
-✅ 自动派彩 ✅ 多群组支持 ✅ 管理后台
+| 层级 | 产品资料描述 | 当前仓库可验证内容 |
+|---|---|---|
+| Web/服务层 | PHP、H5 Web | Composer 自动加载文件、Laravel 风格 `CreatesApplication.php` 与 `TestCase.php` |
+| Bot | Telegram Bot API | README 产品说明；完整 Bot 目录未在当前公开快照中出现 |
+| 数据层 | MySQL、Redis | README 技术说明；数据库脚本需以完整交付物为准 |
+| 游戏逻辑 | 多人交互、龙虎德州、结果验证 | `context.h`、`user.cpp` 等可见代码样本 |
+| 运营层 | 多群管理、记录、后台 | 真实产品截图；完整后台代码需另行核对 |
 
+当前目录中的 `autoload_namespaces.php`、`autoload_psr4.php`、`autoload_real.php` 表明项目使用 Composer 自动加载结构；`CreatesApplication.php` 与 `TestCase.php` 显示 PHP 应用测试入口；`context.h` 和 `user.cpp` 是公开的代码样本。评估或部署前应索取完整目录结构、依赖版本、数据库迁移、环境变量示例和部署文档。
 
-## 🚀 技术架构 | Tech Stack
+## 图文专题
 
+- [Telegram 德州源码与 TG Bot 产品流程](https://masterai-top.github.io/Poker-Game-Platform-Source-Code/zh-cn/telegram-poker-source-code.html)
+- [H5 德州与 Web 扑克平台](https://masterai-top.github.io/Poker-Game-Platform-Source-Code/zh-cn/h5-web-poker.html)
+- [龙虎德州玩法与 Hash 验证](https://masterai-top.github.io/Poker-Game-Platform-Source-Code/zh-cn/dragon-tiger-texas.html)
+- [Telegram Poker Bot 技术结构](https://masterai-top.github.io/Poker-Game-Platform-Source-Code/zh-cn/telegram-poker-bot.html)
+- [English product overview](https://masterai-top.github.io/Poker-Game-Platform-Source-Code/en/telegram-poker-source-code.html)
 
-| 层级 | 技术 |
-| :--- | :--- |
-| **后端** | PHP |
-| **Bot框架** | Telegram Bot API |
-| **数据库** | MySQL + Redis |
-| **区块链** | Hash验证机制 |
-## 🧠 Project Overview
+## 获取与评估
 
+```bash
+git clone https://github.com/masterai-top/Poker-Game-Platform-Source-Code.git
+cd Poker-Game-Platform-Source-Code
+```
 
-This is a full-featured poker game platform system.  
-一个完整的多人扑克游戏平台系统。
+克隆命令只用于查看当前公开文件，不代表已经获得完整可运行平台。评估时建议依次核对：交付清单、安装文档、依赖与数据库、Bot 权限、Hash 验证方法、后台权限、日志审计、安全策略和合法运营范围。
 
+## 合规与安全
 
-Supports multiple poker modes:
+涉及投注、资金、提现或类似功能的软件可能受到当地游戏、支付、反洗钱、年龄限制、隐私和消费者保护法规约束。部署前必须取得适当法律意见和许可，并完成账户、密钥、随机性、支付、日志、权限和数据保护审计。严禁用于违法活动。
 
-
-- Texas Hold’em  
-- Tournament Mode  
-- Club Games  
-- Multiplayer Cash Table  
-
-
-👉 Commercial-ready game platform  
-👉 可用于商业运营的棋牌游戏平台  
-
-
----
-
-
-## ⚙️ Features
-
-
-- Real-time multiplayer system  
-- Game server architecture  
-- Matchmaking system  
-- Tournament system  
-- Club system support  
-
-
----
-
-
-## 🚀 Quick Start
-
-
-git clone xxx  
-cd server  
-npm install  
-npm run start 
-## 🏆 Use Cases
-
-
-- Poker game apps  
-- Casino-style platforms  
-- Social gaming systems  
-- Multiplayer card platforms 
-
-
-## 📸 界面预览
-
-
-| TG Bot界面 | 押注界面 | 开奖结果 |
-| :---: | :---: | :---: |
-<img width="1246" height="595" alt="houtai1" src="https://github.com/user-attachments/assets/a7a9caee-00d1-4c16-9f49-6228f795cd2c" />
-<img width="843" height="1183" alt="QQ_1768804700112" src="https://github.com/user-attachments/assets/e05325d8-2e6f-469b-b09f-a618a9791913" />
-<img width="1049" height="1251" alt="QQ_1768804256777" src="https://github.com/user-attachments/assets/d8ee228d-e7b6-4cab-b2c3-0bd11ef22c9a" />
-<img width="1107" height="1194" alt="QQ_1768804187875" src="https://github.com/user-attachments/assets/c3e1c817-59a5-4d22-b3e0-764f095fa1d1" />
-<img width="1002" height="1204" alt="QQ_1768804139439" src="https://github.com/user-attachments/assets/2b96a7b3-4ae1-45f5-8439-b794fa1d8f99" />
-<img width="943" height="1171" alt="QQ_1768804105632" src="https://github.com/user-attachments/assets/f89a1c0f-0b37-4a4b-9da0-9a855d18a010" />
-<img width="1088" height="1187" alt="QQ_1768803800440" src="https://github.com/user-attachments/assets/0d190ed4-8b01-4cc0-9a4b-4f994a271444" />
-<img width="949" height="660" alt="houtai4" src="https://github.com/user-attachments/assets/a69a44d0-b9e2-4441-8275-52d45f6de2fb" />
-
-
-🎥 **演示视频**：[联系我获取在线演示](https://t.me/xuzongbin001)
-
-
-## 💰 获取源码 | Contact
-
-
-✅ 完整PHP后端源码  
-✅ Telegram Bot代码  
-✅ 数据库脚本  
-✅ 部署文档  
-
-
-📱 **Telegram：@xuzongbin001**  
-📧 **Email：masterai918@gmail.com**
-
-
-
-
-
----
-
-
-⭐ Star 这个仓库，支持优质TG德州源码持续分享！
+联系：Telegram `@xuzongbin001` · Email `masterai918@gmail.com` · [GitHub Issues](https://github.com/masterai-top/Poker-Game-Platform-Source-Code/issues)
